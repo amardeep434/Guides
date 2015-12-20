@@ -19,7 +19,9 @@ cd ~/android/cm13 && repo sync --force-sync && cd ~/android/cm13
 #Setup ccache
 
 nano ~/.bashrc
+
 add to the bottom of the file  (without "") "export USE_CCACHE=1"
+
 cd ~/android/cm13 && prebuilts/misc/linux-x86/ccache/ccache -M 50G
 
 #cm-13.0 commits (these commits are used from unity rom for bacon)
